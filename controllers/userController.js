@@ -45,8 +45,8 @@ module.exports = {
                          user.save()
                          .then(user => {
                               res.status(201).json({
-                                   message:"User saved Successfully",
-                                   user
+                                   message:`Welcome ${user?.email}`
+                                   
                               })
                          })
                          .catch(error => {
